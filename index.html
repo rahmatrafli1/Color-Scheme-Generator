@@ -23,6 +23,34 @@
       </div>
       <div class="color-display" id="colorDisplay"></div>
     </div>
+
+    <!-- Theme FAB -->
+    <div class="theme-fab-container" id="themeFab">
+      <div class="theme-options">
+        <button class="theme-option-btn" data-theme="light" title="Light Mode">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-label">Light</span>
+        </button>
+        <button class="theme-option-btn" data-theme="dark" title="Dark Mode">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-label">Dark</span>
+        </button>
+        <button
+          class="theme-option-btn"
+          data-theme="system"
+          title="System Default"
+        >
+          <span class="theme-icon">💻</span>
+          <span class="theme-label">System</span>
+        </button>
+      </div>
+      <button class="theme-fab-btn" id="themeFabBtn" title="Change Theme">
+        <span class="fab-icon" id="fabIcon">🎨</span>
+      </button>
+    </div>
+
+    <div class="copied-toast" id="toast">Copied to clipboard!</div>
+
     <script src="index.js"></script>
   </body>
 </html>
