@@ -30,7 +30,6 @@
   --shadow-md: rgba(0, 0, 0, 0.5);
   --fab-bg: #7c73ff;
   --fab-hover: #6c63ff;
-  --option-bg: #1e1e3e;
   --option-hover: #2a2a5e;
   --option-text: #e0e0e0;
 }
@@ -233,7 +232,7 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--surface);
+  background: var(--surface) !important;
   border: 2px solid var(--border);
   cursor: pointer;
   font-size: 16px;
@@ -250,6 +249,7 @@ body {
   bottom: 9px;
   right: 9px;
   transform: translate(50%, 50%);
+  color: var(--text);
 }
 
 .theme-option-btn .theme-label {
@@ -285,13 +285,13 @@ body {
 }
 
 .theme-option-btn:hover {
-  background: var(--option-hover);
+  background: var(--option-hover) !important;
   box-shadow: 0 4px 14px var(--shadow-md);
 }
 
 .theme-option-btn.active {
   border-color: var(--fab-bg);
-  background: var(--option-hover);
+  background: var(--option-hover) !important;
 }
 
 .theme-icon {
